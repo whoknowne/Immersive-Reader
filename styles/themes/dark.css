@@ -1,0 +1,26 @@
+/* 暗色主题 */
+body.reader-mode.dark-theme {
+    background-color: #222222;
+    color: #eeeeee;
+}
+
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3 {
+    color: #ffffff;
+}
+
+.dark-theme a {
+    color: #66b3ff;
+}
+
+.dark-theme blockquote {
+    border-left-color: #444444;
+    color: #cccccc;
+    background-color: #333333;
+}
+
+.dark-theme code {
+    background-color: #333333;
+    color: #eeeeee;
+} 

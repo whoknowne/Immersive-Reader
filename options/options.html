@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>阅读模式设置</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="options-container">
+        <h1>阅读模式设置</h1>
+        
+        <section class="option-group">
+            <h2>主题设置</h2>
+            <div class="option-item">
+                <label for="theme">主题选择:</label>
+                <select id="theme">
+                    <option value="light">亮色主题</option>
+                    <option value="dark">暗色主题</option>
+                    <option value="sepia">护眼模式</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="option-group">
+            <h2>字体设置</h2>
+            <div class="option-item">
+                <label for="fontSize">字体大小:</label>
+                <input type="range" id="fontSize" min="12" max="24" step="1">
+                <span id="fontSizeValue">16px</span>
+            </div>
+            
+            <div class="option-item">
+                <label for="fontFamily">字体选择:</label>
+                <select id="fontFamily">
+                    <option value="system">系统默认</option>
+                    <option value="serif">衬线字体</option>
+                    <option value="sans-serif">无衬线字体</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="option-group">
+            <h2>阅读设置</h2>
+            <div class="option-item">
+                <label for="lineHeight">行高:</label>
+                <input type="range" id="lineHeight" min="1.2" max="2.0" step="0.1">
+                <span id="lineHeightValue">1.6</span>
+            </div>
+            
+            <div class="option-item">
+                <label for="maxWidth">最大宽度:</label>
+                <input type="range" id="maxWidth" min="600" max="1200" step="50">
+                <span id="maxWidthValue">800px</span>
+            </div>
+        </section>
+
+        <div class="button-group">
+            <button id="save">保存设置</button>
+            <button id="reset">重置默认</button>
+        </div>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html> 

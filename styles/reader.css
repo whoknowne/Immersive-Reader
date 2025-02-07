@@ -1,0 +1,45 @@
+/* 基础阅读模式样式 */
+body.reader-mode {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* 标题样式 */
+.reader-mode h1,
+.reader-mode h2,
+.reader-mode h3 {
+    margin: 1.5em 0 0.5em;
+    line-height: 1.3;
+}
+
+/* 段落样式 */
+.reader-mode p {
+    margin: 1em 0;
+}
+
+/* 图片样式 */
+.reader-mode img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+}
+
+/* 链接样式 */
+.reader-mode a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.reader-mode a:hover {
+    text-decoration: underline;
+}
+
+/* 引用样式 */
+.reader-mode blockquote {
+    margin: 1em 0;
+    padding: 0 1em;
+    border-left: 4px solid #ddd;
+    color: #666;
+} 

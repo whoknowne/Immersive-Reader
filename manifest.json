@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "沉浸式阅读模式",
+  "version": "1.0.0",
+  "description": "提供简洁、无干扰的网页阅读体验",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "commands",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "commands": {
+    "toggle-reader-mode": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+R",
+        "mac": "Command+Shift+R"
+      },
+      "description": "切换阅读模式"
+    }
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "content_scripts/articleExtractor.js",
+        "content_scripts/styleInjector.js",
+        "content_scripts/content.js"
+      ],
+      "css": ["styles/reader.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "options_page": "options/options.html"
+} 

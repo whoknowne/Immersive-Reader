@@ -1,0 +1,259 @@
+.popup-container {
+    width: 280px;
+    padding: 16px;
+    background: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+h1 {
+    font-size: 16px;
+    margin: 0 0 16px;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+h2 {
+    font-size: 13px;
+    margin: 0 0 10px;
+    color: #666;
+    font-weight: 500;
+}
+
+.setting-section {
+    margin: 20px 0;
+}
+
+/* 开关按钮样式 */
+.switch-container {
+    margin-bottom: 20px;
+}
+
+.mode-switch {
+    width: 100%;
+    padding: 10px;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.mode-switch:hover {
+    background: #eeeeee;
+}
+
+.switch-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background: conic-gradient(
+        from 0deg,
+        #FF0000 0%,
+        #FF8000 12.5%,
+        #FFFF00 25%,
+        #80FF00 37.5%,
+        #00FF00 50%,
+        #00FF80 62.5%,
+        #00FFFF 75%,
+        #0080FF 87.5%,
+        #FF0000 100%
+    );
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 添加内圈白色圆环 */
+.switch-icon::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: inherit;  /* 继承外层的渐变背景 */
+}
+
+.switch-icon::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.switch-label {
+    color: #333;
+    font-size: 13px;
+}
+
+/* 主题选择器样式 */
+.theme-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    background: #f5f5f5;
+    padding: 8px 16px;
+    border-radius: 8px;
+    min-height: 36px;
+}
+
+.theme-btn {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.2s;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    margin: 0;
+}
+
+/* 所有主题按钮都添加边框 */
+.theme-btn {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
+}
+
+.theme-btn.active {
+    transform: scale(1.15);
+    box-shadow: 0 0 0 1.5px #fff, 0 0 0 3px currentColor;
+}
+
+/* 字体大小控制样式 */
+.font-size-control {
+    background: #f5f5f5;
+    padding: 12px;
+    border-radius: 8px;
+    width: calc(100% - 24px);  /* 减去左右内边距，保持与容器边界的距离一致 */
+    margin: 0 auto;  /* 居中显示 */
+}
+
+.size-preview {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #666;
+}
+
+.preview-text {
+    flex-grow: 1;
+    color: #333;
+}
+
+.preview-controls {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.preview-btn {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.preview-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+/* 移除旧的字体大小控制样式 */
+.size-display,
+.size-controls,
+input[type="range"] {
+    display: none;
+}
+
+.setting-item {
+    margin: 15px 0;
+}
+
+.setting-item label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+select, input[type="range"] {
+    width: 100%;
+    padding: 5px;
+}
+
+/* 主题样式 */
+.dark-theme {
+    background: #333;
+    color: #fff;
+}
+
+.light-theme {
+    background: #fff;
+    color: #333;
+}
+
+/* 主题按钮悬停效果 */
+.theme-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 1.5px #fff, 0 0 0 3px rgba(0,0,0,0.1);
+}
+
+/* 主题按钮激活并悬停 */
+.theme-btn.active:hover {
+    transform: scale(1.15);
+}
+
+/* 错误消息样式 */
+.error-message {
+    font-size: 12px;
+    padding: 8px 12px;
+    margin-top: 8px;
+    background: #f44336;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+} 
