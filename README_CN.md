@@ -1,20 +1,20 @@
 # Immersive Reader
 
-[中文](README_CN.md) | English
+[English](README.md) | 中文
 
-A clean and elegant Chrome extension for reading mode that provides a comfortable web reading experience.
+一个简洁优雅的 Chrome 阅读模式扩展，提供舒适的网页阅读体验。
 
-## Features
+## 功能特点
 
-- 🎨 8 Carefully Designed Theme Colors
-  - Parchment White (#FAF4E8)
-  - Morning Mist (#F0F0F0)
-  - Mint Green (#E0F0E8)
-  - Dawn Blue (#E8F2F8)
-  - Almond White (#FFF8EB)
-  - Aurora Purple (#F5F0FA)
-  - Sandstone (#F4ECDC)
-  - Glacier Blue (#EBF5F5)
+- 🎨 8种精心设计的主题配色
+  - 羊皮纸白 (#FAF4E8)
+  - 晨雾灰 (#F0F0F0)
+  - 薄荷淡青 (#E0F0E8)
+  - 黎明浅蓝 (#E8F2F8)
+  - 杏仁乳白 (#FFF8EB)
+  - 极光淡紫 (#F5F0FA)
+  - 砂岩浅褐 (#F4ECDC)
+  - 冰川淡青 (#EBF5F5)
 
 - 📖 Immersive Reading Experience
   - Automatic article content extraction
@@ -78,5 +78,4 @@ Issues and Pull Requests are welcome to help improve the project.
 
 ## License
 
-[MIT License](LICENSE)
-
+[MIT License](LICENSE) 
