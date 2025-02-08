@@ -16,66 +16,66 @@
   - 砂岩浅褐 (#F4ECDC)
   - 冰川淡青 (#EBF5F5)
 
-- 📖 Immersive Reading Experience
-  - Automatic article content extraction
-  - Remove ads and distracting elements
-  - Optimize typography and spacing
+- 📖 沉浸式阅读体验
+  - 自动提取文章主要内容
+  - 移除广告和干扰元素
+  - 优化排版和间距
 
-- 🔤 Flexible Font Control
-  - Support 12px-24px font size adjustment
-  - Remember user preferences
+- 🔤 灵活的字体控制
+  - 支持12px-24px字体大小调节
+  - 记住用户偏好设置
 
-## Installation
+## 安装方法
 
-1. Download the project code
-2. Open Chrome browser and navigate to extensions page (chrome://extensions/)
-3. Enable "Developer mode"
-4. Click "Load unpacked" and select the project folder
+1. 下载本项目代码
+2. 打开Chrome浏览器，进入扩展程序页面 (chrome://extensions/)
+3. 开启"开发者模式"
+4. 点击"加载已解压的扩展程序"，选择项目文件夹
 
-## Usage
+## 使用方法
 
-1. Click the extension icon in the toolbar to open the control panel
-2. Click "Toggle Reader Mode" to enter reading mode
-3. Choose your preferred theme color
-4. Adjust the font size to your comfort
+1. 点击工具栏中的扩展图标打开控制面板
+2. 点击"切换阅读模式"进入阅读模式
+3. 选择喜欢的主题颜色
+4. 调整合适的字体大小
 
-## Tech Stack
+## 技术栈
 
 - HTML/CSS/JavaScript
-- Chrome Extension API
-- Content extraction algorithm
+- Chrome扩展API
+- 内容提取算法
 
-## Development
+## 开发说明
 
-Project structure:
+项目结构：
 ```
 chrome-extension/
 │
-├── manifest.json         # Extension configuration
+├── manifest.json         # 扩展配置文件
 │
-├── icons/               # Extension icons
+├── icons/               # 扩展图标
 │   ├── icon16.png
 │   ├── icon48.png
 │   └── icon128.png
 │
-├── background/          # Background scripts
+├── background/          # 后台脚本
 │   └── background.js
 │
-├── content_scripts/     # Content scripts
+├── content_scripts/     # 内容脚本
 │   ├── articleExtractor.js
 │   ├── styleInjector.js
 │   └── content.js
 │
-├── popup/              # Popup interface
+├── popup/              # 弹出界面
 │   ├── popup.html
 │   ├── popup.js
 │   └── popup.css
 ```
 
-## Contributing
+## 贡献指南
 
-Issues and Pull Requests are welcome to help improve the project.
+欢迎提交 Issue 和 Pull Request 来帮助改进项目。
 
-## License
+## 许可证
 
-[MIT License](LICENSE) 
+[MIT许可证](LICENSE) 
